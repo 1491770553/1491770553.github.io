@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | 来杯java吗的博客</title>
+  <title>JSTL和EL互相使用注意什么 | 来杯java吗的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="来杯java吗的博客">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="JSTL和EL互相使用注意什么在单面使用EL不需要在jsp页面引入库。不过el一般和JSTL标签配合使用。这时需要引入1&amp;lt;%@ taglib uri=&quot;http://java.sun.com/jsp/jstl/core&quot; prefix=&quot;c&quot;%&amp;gt; 1,访问Bean属性如：${user.uname}等价于1&amp;lt;% User user=(User)request.getAttribut">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JSTL和EL互相使用注意什么">
+<meta property="og:url" content="http://yoursite.com/2019/05/14/JSTL和EL互相使用注意什么/index.html">
 <meta property="og:site_name" content="来杯java吗的博客">
+<meta property="og:description" content="JSTL和EL互相使用注意什么在单面使用EL不需要在jsp页面引入库。不过el一般和JSTL标签配合使用。这时需要引入1&amp;lt;%@ taglib uri=&quot;http://java.sun.com/jsp/jstl/core&quot; prefix=&quot;c&quot;%&amp;gt; 1,访问Bean属性如：${user.uname}等价于1&amp;lt;% User user=(User)request.getAttribut">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-05-13T16:21:24.747Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="来杯java吗的博客">
+<meta name="twitter:title" content="JSTL和EL互相使用注意什么">
+<meta name="twitter:description" content="JSTL和EL互相使用注意什么在单面使用EL不需要在jsp页面引入库。不过el一般和JSTL标签配合使用。这时需要引入1&amp;lt;%@ taglib uri=&quot;http://java.sun.com/jsp/jstl/core&quot; prefix=&quot;c&quot;%&amp;gt; 1,访问Bean属性如：${user.uname}等价于1&amp;lt;% User user=(User)request.getAttribut">
   
     <link rel="alternative" href="/atom.xml" title="来杯java吗的博客" type="application/atom+xml">
   
@@ -165,238 +169,192 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-JSTL和EL互相使用注意什么" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      JSTL和EL互相使用注意什么
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/05/14/JSTL和EL互相使用注意什么/" class="archive-article-date">
+
+        
+        <a href="/2019/05/14/JSTL和EL互相使用注意什么/" class="archive-article-date">
   	<time datetime="2019-05-13T16:02:44.756Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-14</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/05/14/JSTL和EL互相使用注意什么/">JSTL和EL互相使用注意什么</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="JSTL和EL互相使用注意什么"><a href="#JSTL和EL互相使用注意什么" class="headerlink" title="JSTL和EL互相使用注意什么"></a>JSTL和EL互相使用注意什么</h2><h3 id="在单面使用EL不需要在jsp页面引入库。不过el一般和JSTL标签配合使用。这时需要引入"><a href="#在单面使用EL不需要在jsp页面引入库。不过el一般和JSTL标签配合使用。这时需要引入" class="headerlink" title="在单面使用EL不需要在jsp页面引入库。不过el一般和JSTL标签配合使用。这时需要引入"></a>在单面使用EL不需要在jsp页面引入库。不过el一般和JSTL标签配合使用。这时需要引入</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ taglib uri=<span class="string">"http://java.sun.com/jsp/jstl/core"</span> prefix=<span class="string">"c"</span>%&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="1-访问Bean属性如：-user-uname-等价于"><a href="#1-访问Bean属性如：-user-uname-等价于" class="headerlink" title="1,访问Bean属性如：${user.uname}等价于"></a>1,访问Bean属性如：${user.uname}等价于</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;% User user=(User)request.getAttribute(<span class="string">"user"</span>);out.print(user.getUname());%&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="2，获取请求参数，如：-param-username-等价于"><a href="#2，获取请求参数，如：-param-username-等价于" class="headerlink" title="2，获取请求参数，如：${param.username}等价于"></a>2，获取请求参数，如：${param.username}等价于</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%request.getParamter(<span class="string">"username"</span>);%&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="EL表达式是配合JSTL使用的。你需要引入的是JSTL标签库"><a href="#EL表达式是配合JSTL使用的。你需要引入的是JSTL标签库" class="headerlink" title="EL表达式是配合JSTL使用的。你需要引入的是JSTL标签库"></a>EL表达式是配合JSTL使用的。你需要引入的是JSTL标签库</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@taglib uri=<span class="string">" jsp标签的命名空间 "</span> prefix=<span class="string">"c"</span>%&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="JSTL标签库下载《百度云》版本：jakarta-taglibs-standard-1-1-2"><a href="#JSTL标签库下载《百度云》版本：jakarta-taglibs-standard-1-1-2" class="headerlink" title="JSTL标签库下载《百度云》版本：jakarta-taglibs-standard-1.1.2"></a>JSTL标签库下载《百度云》版本：jakarta-taglibs-standard-1.1.2</h3><p><a href="https://pan.baidu.com/s/1qjnYQ6DDnRypuRQWG4NCXQ" target="_blank" rel="noopener">百度云链接:</a><br>提取码：zmqk </p>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果QWQ！<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/../img/支付宝.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/../img/微信.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/05/14/JSTL和EL互相使用注意什么/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/05/10/idea控制台乱码/" class="archive-article-date">
-  	<time datetime="2019-05-10T08:17:39.549Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-10</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/05/10/idea控制台乱码/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">idea控制台中文乱码的问题</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/05/10/idea控制台乱码/">idea控制台中文乱码的问题</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/05/10/maven的作用/" class="archive-article-date">
-  	<time datetime="2019-05-10T08:01:10.695Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-10</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/05/10/maven的作用/">maven的作用</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/05/10/idea初始化使用教程/" class="archive-article-date">
-  	<time datetime="2019-05-10T07:12:32.627Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-10</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/05/10/idea初始化使用教程/">Idea初始常用配置</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/05/09/jsp作用域/" class="archive-article-date">
-  	<time datetime="2019-05-09T12:07:07.325Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-09</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/05/09/jsp作用域/">jsp的9大内置对象和4大作用域</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/05/09/java的Servlet乱码处理/" class="archive-article-date">
-  	<time datetime="2019-05-09T11:41:26.846Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-09</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/05/09/java的Servlet乱码处理/">处理Servlet的out响应乱码情况</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/04/29/Spring/" class="archive-article-date">
-  	<time datetime="2019-04-29T10:43:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/04/29/Spring/">Spring</a>
-    </h1>
-  
+<div class="gitalk">
+    <div id="gitalk-container"></div>
+    <script type="text/javascript">
+        const gitalk = new Gitalk({
+            clientID: 'a2dc8424a98663e1865f',
+            clientSecret: 'ddf490ab91e5ad7b3f2009ebe1901b37c3dd3b63',
+            repo: 'https://github.com/1491770553/1491770553.github.io.git',
+            owner: '1491770553',
+            admin: ['1491770553'],
+            id: md5(location.pathname),      // Ensure uniqueness and length less than 50
+            distractionFreeMode: false  // Facebook-like distraction free mode
+        })
+ 
+        gitalk.render('gitalk-container')
+    </script>
+</div>
 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/04/29/hello-world/" class="archive-article-date">
-  	<time datetime="2019-04-29T10:32:47.464Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/04/29/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -419,8 +377,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
