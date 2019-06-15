@@ -169,6 +169,112 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-MySQL忘记root密码的解决办法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/06/15/MySQL忘记root密码的解决办法/">mysql忘记密码解决办法</a>
+    </h1>
+  
+
+        
+        
+
+<a href="/2019/06/15/MySQL忘记root密码的解决办法/" class="archive-article-date">
+  	<time datetime="2019-06-15T15:23:30.228Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-15</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ol>
+<li>首先检查mysql服务是否启动，若已启动则先将其停止服务，可在开始菜单的运行，使用cmd，在dos命令窗口中输入如下命令：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">net stop mysql</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<ol start="2">
+<li>再打开一个cmd窗口，使用cd命令，进入到mysql安装路径的bin目录，输入下列命令（敲回车后，保持窗口的状态，不要关闭该窗口，直接进行下面的步骤即可；）：</li>
+</ol>
+<p>/<em>下面语句中的文件路径需要改成你自己的文件路径</em>/<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqld --defaults-file=<span class="string">"D:\MyStudySoft\MySQL5\bin\my.ini"</span> --console --skip-grant-tables</span><br></pre></td></tr></table></figure></p>
+<p>注释：<br>该命令通过跳过权限安全检查，开启mysql服务，这样连接mysql时，可以不用输入用户密码。 </p>
+<ol start="3">
+<li>打开第二个cmd窗口，使用cd命令，进入到mysql安装路径的bin目录，输入下列命令：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql -uroot -p</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>出现下面的提示时直接敲回车，不用输入密码：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Enter password:</span><br></pre></td></tr></table></figure></p>
+<p>然后就就会出现登录成功的信息， </p>
+<ol start="4">
+<li><p>继续输入如下命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">use mysql;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>输入如下命令更改root密码：</p>
+</li>
+</ol>
+<p>/<em>下面语句中的newpassword需要改成你自己想要设置的密码</em>/<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">UPDATE user SET Password=PASSWORD(<span class="string">'newpassword'</span>) <span class="built_in">where</span> USER=<span class="string">'root'</span>;</span><br></pre></td></tr></table></figure></p>
+<ol start="6">
+<li><p>输入如下命令刷新权限：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">FLUSH PRIVILEGES;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>输入如下命令即可退出： </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">quit</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>重新登录，测试是否修改成功：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">mysql -uroot -p</span><br><span class="line">``` </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">出现输入密码提示，输入新的密码即可登录：</span><br><span class="line">``` bash</span><br><span class="line">Enter password: ***********</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>显示登录信息： 成功  就一切ok了，如果不成功，从新执行第4-8步直到成功为止；</p>
+<ol start="9">
+<li>时可以关闭所有的dos窗口了；</li>
+<li>手动启动mysql的服务即可，正常使用了；（或在dos命令行输入：net start mysql   命令也可以实现启动mysql的服务！）</li>
+</ol>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/06/15/MySQL忘记root密码的解决办法/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+
+
+  
     <article id="post-关于博客复原" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -184,7 +290,7 @@
         
 
 <a href="/2019/06/05/关于博客复原/" class="archive-article-date">
-  	<time datetime="2019-06-04T16:29:33.062Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-05</time>
+  	<time datetime="2019-06-05T05:22:14.747Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-05</time>
 </a>
         
       </header>
@@ -279,7 +385,7 @@
         
 
 <a href="/2019/06/05/maven的作用/" class="archive-article-date">
-  	<time datetime="2019-06-04T16:13:45.568Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-05</time>
+  	<time datetime="2019-06-05T05:22:14.742Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-05</time>
 </a>
         
       </header>
@@ -349,7 +455,7 @@
         
 
 <a href="/2019/06/05/JSTL和EL互相使用注意什么/" class="archive-article-date">
-  	<time datetime="2019-06-04T16:13:45.567Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-05</time>
+  	<time datetime="2019-06-05T05:22:14.736Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-05</time>
 </a>
         
       </header>
@@ -421,7 +527,7 @@
         
 
 <a href="/2019/06/05/jsp作用域/" class="archive-article-date">
-  	<time datetime="2019-06-04T16:13:45.566Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-05</time>
+  	<time datetime="2019-06-05T05:22:14.732Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-05</time>
 </a>
         
       </header>
@@ -489,7 +595,7 @@
         
 
 <a href="/2019/06/05/java的Servlet乱码处理/" class="archive-article-date">
-  	<time datetime="2019-06-04T16:13:45.564Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-05</time>
+  	<time datetime="2019-06-05T05:22:14.728Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-05</time>
 </a>
         
       </header>
@@ -558,7 +664,7 @@
         
 
 <a href="/2019/06/05/idea控制台乱码/" class="archive-article-date">
-  	<time datetime="2019-06-04T16:13:45.562Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-05</time>
+  	<time datetime="2019-06-05T05:22:14.725Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-05</time>
 </a>
         
       </header>
@@ -625,7 +731,7 @@
         
 
 <a href="/2019/06/05/idea初始化使用教程/" class="archive-article-date">
-  	<time datetime="2019-06-04T16:13:45.561Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-05</time>
+  	<time datetime="2019-06-05T05:22:14.717Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-05</time>
 </a>
         
       </header>
@@ -699,7 +805,7 @@
         
 
 <a href="/2019/06/05/hello-world/" class="archive-article-date">
-  	<time datetime="2019-06-04T16:13:45.560Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-05</time>
+  	<time datetime="2019-06-05T05:22:14.714Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-05</time>
 </a>
         
       </header>
