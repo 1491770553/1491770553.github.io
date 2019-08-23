@@ -1,992 +1,753 @@
-<!--
-	作者：Sariay
-	时间：2018-09-25
-	描述：There may be a bug, but don't worry, QiLing(器灵) says that it can work normally!
--->
 <!DOCTYPE html>
-<html class="html-loading">
-		
-
+<html>
 <head><meta name="generator" content="Hexo 3.8.0">
-	<meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-  <title>
-    
-      来杯java吗的博客
-    
-  </title>
-  <meta name="author" content="来杯java吗">
-  <meta name="keywords" content>
-  <meta name="description" content="精通java，HTML5，jquery，spring，oracle，SqlServer，mysql，C#，jsp等...">
-	<!-- favicon -->
-  <link rel="shortcut icon" href="/img/favicon.ico">
-
-  <!-- css -->
-  <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="/css/Annie.css">
+  <meta charset="utf-8">
   
-  <!-- jquery -->
-	<script src="/js/jquery.min.js"></script>
+  <title>来杯java吗的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="keywords" content="一花一树一世界">
+  
+  <meta property="og:type" content="website">
+<meta property="og:title" content="来杯java吗的博客">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="来杯java吗的博客">
+<meta property="og:locale" content="default">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="来杯java吗的博客">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/pace.min.js"></script>
+  
 
-  <!-- leancloud -->
-  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
-<script src="/js/leancloud.js"></script>
+  
+  
+
 </head>
-	<body>
-		<!-- Preloader -->
-
-	<div id="preloader">
-		<div class="pre-container">
-			
-				<div class="spinner">
-					<div class="double-bounce1"></div>
-					<div class="double-bounce2"></div>
-				</div>
-						
-		</div>
-	</div>
-
-
-<!-- header -->
-<header class="fixbackground" data-img-mode="normal" data-normal-src="/img/1.jpg" data-random-max="110" data-random-src="https://sariay.github.io/Random-img/">
-	<div class="mask">
-		<!-- Logo and navigation -->
-		<div class="h-header">
-			<div id="logo">
-				<a href="/">
-						
-						<img src="/img/logo.png" alt="Logo">
-					
-				</a>
-			</div>
-			
-			<div id="navigation-show">
-				<ul>
-	
-		<li class="menu-home">
-			<a href="/" class="menu-item-home">主页</a>
-		</li>
-	
-		<li class="menu-archive">
-			<a href="/archives" class="menu-item-archive">归档</a>
-		</li>
-	
-		<li class="menu-categories">
-			<a href="/categories" class="menu-item-categories">分类</a>
-		</li>
-	
-		<li class="menu-tags">
-			<a href="/tags" class="menu-item-tags">标签</a>
-		</li>
-	
-		<li class="menu-about">
-			<a href="/about" class="menu-item-about">关于</a>
-		</li>
-	
-		<li class="menu-gallery">
-			<a href="/gallery" class="menu-item-gallery">相册</a>
-		</li>
-	
-
-	
-</ul>
-			</div>				
-		</div>
-
-		<!-- motto -->
-		<div class="h-body">	
-			
-				<p class="motto"></p>
-			
-		</div>
-		
-		<!-- others: such as time... -->			
-		<div class="h-footer">
-			<a href="javascript:;" id="read-more"><i class="fa fa-angle-double-down" aria-hidden="true"></i>
-			</a>
-
-			
-				<!-- 
-	This is only a demo, please go to "https://time.is" to set your city time! 
--->
-<style type="text/css">
-	.header-date {
-		font-size: 1.6rem;
-		color: #fff;
-		position: absolute;
-		bottom: 5px;
-		right: 1rem;
-		writing-mode: tb-rl;
-	}	
-	
-	.header-date a {
-		border-bottom: none;
-	}
-
-	@media only screen and (max-width: 768 ) {
-		.header-date {
-			font-size: 1rem;
-		}			
-	}
-</style>
-<div class="header-date">
-	<a href="https://time.is/Beijing" id="time_is_link" rel="nofollow"></a>
-	<span id="Beijing_z43d"></span>
-</div>
-<script src="//widget.time.is/zh.js"></script>
-<script>
-	time_is_widget.init({
-		Beijing_z43d:{
-			template:"DATE", 
-			date_format:"year年 monthname dnum日"
-		}
-	});
-</script>
-			
-		</div>
-	</div>
+</html>
+<body>
+  <div id="container">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer">
+        <div id="header-menu" class="header-menu-pos animated">
+            <div class="header-menu-container">
+                <a href="/" class="left">
+                    <span class="site-title"></span>
+                </a>
+                <nav id="header-menu-nav" class="right">
+                    
+                    <a ">
+                        <i class="fa fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                    
+                    <a href="/">
+                        <i class="fa fa-archive"></i>
+                        <span>Archives</span>
+                    </a>
+                    
+                    <a href="/about">
+                        <i class="fa fa-user"></i>
+                        <span>About</span>
+                    </a>
+                    
+                </nav>
+                <a class="mobile-header-menu-button">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div id="header-row">
+            <div id="logo">
+                <a href="/">
+                    <img src="/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-info">
+                <div id="header-title">
+                    
+                </div>
+                <div id="header-description">
+                    
+                    <h3>
+                        一花一树一世界
+                    </h3>
+                    
+                </div>
+            </div>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a title="MinHow" target="_blank" href="//minhow.com">
+                            <i class="fa fa-home fa-2x"></i></a>
+                    
+                        <a title="Github" target="_blank" ">
+                            <i class="fa fa-github fa-2x"></i></a>
+                    
+                        <a title="Weibo" target="_blank" ">
+                            <i class="fa fa-weibo fa-2x"></i></a>
+                    
+                        <a title="Twitter" target="_blank" ">
+                            <i class="fa fa-twitter fa-2x"></i></a>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
 </header>
-
-<div id="navigation-hide">
-	<!-- Progress bar -->
-	<div id="progress-bar"></div>
-
-	<!-- Progress percent -->
-	<div id="progress-percentage"><h1>0.0%</h1></div>
-
-	<div class="toc-switch"><span class="switch-button">目录</span></div>
-
-	<!-- Page title -->
-	<p>
-		
-			主页
-		
-	</p>
-
-	<!-- Nav trigger for navigation-H-->
-	<a class="nav-trigger"><span></span></a>
-</div>
-
-<!-- Navigation in div(id="navigation-H") -->
-<nav class="nav-container" id="cd-nav">
-	<div class="nav-header">
-		<h3>Navigation</h3>
-		<a href="javascript:;" class="nav-close"></a>
-	</div>
-	<div class="nav-body">
-		<ul>
-	
-		<li class="menu-home">
-			<a href="/" class="menu-item-home">主页</a>
-		</li>
-	
-		<li class="menu-archive">
-			<a href="/archives" class="menu-item-archive">归档</a>
-		</li>
-	
-		<li class="menu-categories">
-			<a href="/categories" class="menu-item-categories">分类</a>
-		</li>
-	
-		<li class="menu-tags">
-			<a href="/tags" class="menu-item-tags">标签</a>
-		</li>
-	
-		<li class="menu-about">
-			<a href="/about" class="menu-item-about">关于</a>
-		</li>
-	
-		<li class="menu-gallery">
-			<a href="/gallery" class="menu-item-gallery">相册</a>
-		</li>
-	
-
-	
-</ul>
-	</div>
-	<div class="nav-footer">
-		<ul>
-	
-		<li>
-			<a href="http://github.com/" target="_blank">
-				<i class="fa fa-github"></i>
-			</a>
-		</li>
-	
-		<li>
-			<a href="http://github.com/" target="_blank">
-				<i class="fa fa-weibo"></i>
-			</a>
-		</li>
-	
-		<li>
-			<a href="http://github.com/" target="_blank">
-				<i class="fa fa-pinterest"></i>
-			</a>
-		</li>
-	
-		<li>
-			<a href="http://github.com/" target="_blank">
-				<i class="fa fa-instagram"></i>
-			</a>
-		</li>
-	
-		<li>
-			<a href="http://github.com/" target="_blank">
-				<i class="fa fa-twitter"></i>
-			</a>
-		</li>
-	
-		<li>
-			<a href="/atom.xml" target="_blank">
-				<i class="fa fa-rss"></i>
-			</a>
-		</li>
-			
-</ul>
-
-	</div>
-</nav>
-			
-		<!--main-->
-		<main>
-			
-
-
-
-	<!--cart style-->
-	<div class="layout-cart">
-	<div id="layout-cart">
-		
-		<div class="post" id="post">
-			<a class="post-cover" href="/2019/06/15/关于博客复原/" title=" 我的兄弟叫顺溜之还原博客 ">
-				
-				<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg">
-			</a>
-
-			<div class="post-text">
-				<p class="post-time">
-					六月 15日, 2019
-				</p>	
-				<h3 class="post-title" id="post-title-index">
-					<a href="/2019/06/15/关于博客复原/" title="我的兄弟叫顺溜之还原博客">
-						<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-						
-	<a href="/2019/06/15/关于博客复原/" itemprop="url">
-		我的兄弟叫顺溜之还原博客
-	</a>
-
-					</a>
-				</h3>
-				<p class="post-content">
-					
-						糟糕，重装系统了，博客没了怎么办！大概分为下面几个步骤1231. 环境搭建2. 安装Hexo3. 别瞎看只需要二步哦，忽略我好吗？？
-
-偷偷告诉你们没有备...
-					
-				</p>
-				<p class="post-meta">
-					
-
-
-
-					
-
-	<!-- leancloud -->
-	<!--
-	时间：2018-11-27
-	描述：
-		文章访问量：visitors
-		文章喜欢量：likes	
-		文章排行榜：topNPost
-		其他得说明：
-			01-Cookie相关的函数 
-				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
-			02-visitors相关的函数 
-				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
-				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
-			03-topNPost相关的函数
-				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
-			04-likes相关的函数，
-				参考了01 & 02进行简单的设计与实现
--->
-
-
-	
-
-				</p>
-			</div>
-		</div>
-		
-		<div class="post" id="post">
-			<a class="post-cover" href="/2019/06/15/MySQL忘记root密码的解决办法/" title=" mysql忘记密码解决办法 ">
-				
-				<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg">
-			</a>
-
-			<div class="post-text">
-				<p class="post-time">
-					六月 15日, 2019
-				</p>	
-				<h3 class="post-title" id="post-title-index">
-					<a href="/2019/06/15/MySQL忘记root密码的解决办法/" title="mysql忘记密码解决办法">
-						<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-						
-	<a href="/2019/06/15/MySQL忘记root密码的解决办法/" itemprop="url">
-		mysql忘记密码解决办法
-	</a>
-
-					</a>
-				</h3>
-				<p class="post-content">
-					
-						
-首先检查mysql服务是否启动，若已启动则先将其停止服务，可在开始菜单的运行，使用cmd，在dos命令窗口中输入如下命令：1net stop mysql...
-					
-				</p>
-				<p class="post-meta">
-					
-
-
-
-					
-
-	<!-- leancloud -->
-	<!--
-	时间：2018-11-27
-	描述：
-		文章访问量：visitors
-		文章喜欢量：likes	
-		文章排行榜：topNPost
-		其他得说明：
-			01-Cookie相关的函数 
-				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
-			02-visitors相关的函数 
-				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
-				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
-			03-topNPost相关的函数
-				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
-			04-likes相关的函数，
-				参考了01 & 02进行简单的设计与实现
--->
-
-
-	
-
-				</p>
-			</div>
-		</div>
-		
-		<div class="post" id="post">
-			<a class="post-cover" href="/2019/06/15/maven的作用/" title=" maven的作用 ">
-				
-				<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg">
-			</a>
-
-			<div class="post-text">
-				<p class="post-time">
-					六月 15日, 2019
-				</p>	
-				<h3 class="post-title" id="post-title-index">
-					<a href="/2019/06/15/maven的作用/" title="maven的作用">
-						<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-						
-	<a href="/2019/06/15/maven的作用/" itemprop="url">
-		maven的作用
-	</a>
-
-					</a>
-				</h3>
-				<p class="post-content">
-					
-						第一个作用：帮你下载jar包1$ maven项目会有一个 pom.xml文件， 在这个文件里面，只要你添加相应配置，他就会自动帮你下载相应jar包，不用你...
-					
-				</p>
-				<p class="post-meta">
-					
-
-
-
-					
-
-	<!-- leancloud -->
-	<!--
-	时间：2018-11-27
-	描述：
-		文章访问量：visitors
-		文章喜欢量：likes	
-		文章排行榜：topNPost
-		其他得说明：
-			01-Cookie相关的函数 
-				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
-			02-visitors相关的函数 
-				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
-				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
-			03-topNPost相关的函数
-				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
-			04-likes相关的函数，
-				参考了01 & 02进行简单的设计与实现
--->
-
-
-	
-
-				</p>
-			</div>
-		</div>
-		
-		<div class="post" id="post">
-			<a class="post-cover" href="/2019/06/15/JSTL和EL互相使用注意什么/" title=" JSTL和EL互相使用注意什么 ">
-				
-				<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg">
-			</a>
-
-			<div class="post-text">
-				<p class="post-time">
-					六月 15日, 2019
-				</p>	
-				<h3 class="post-title" id="post-title-index">
-					<a href="/2019/06/15/JSTL和EL互相使用注意什么/" title="JSTL和EL互相使用注意什么">
-						<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-						
-	<a href="/2019/06/15/JSTL和EL互相使用注意什么/" itemprop="url">
-		JSTL和EL互相使用注意什么
-	</a>
-
-					</a>
-				</h3>
-				<p class="post-content">
-					
-						JSTL和EL互相使用注意什么在单面使用EL不需要在jsp页面引入库。不过el一般和JSTL标签配合使用。这时需要引入1&lt;%@ taglib uri...
-					
-				</p>
-				<p class="post-meta">
-					
-
-
-
-					
-
-	<!-- leancloud -->
-	<!--
-	时间：2018-11-27
-	描述：
-		文章访问量：visitors
-		文章喜欢量：likes	
-		文章排行榜：topNPost
-		其他得说明：
-			01-Cookie相关的函数 
-				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
-			02-visitors相关的函数 
-				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
-				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
-			03-topNPost相关的函数
-				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
-			04-likes相关的函数，
-				参考了01 & 02进行简单的设计与实现
--->
-
-
-	
-
-				</p>
-			</div>
-		</div>
-		
-		<div class="post" id="post">
-			<a class="post-cover" href="/2019/06/15/jsp作用域/" title=" jsp的9大内置对象和4大作用域 ">
-				
-				<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg">
-			</a>
-
-			<div class="post-text">
-				<p class="post-time">
-					六月 15日, 2019
-				</p>	
-				<h3 class="post-title" id="post-title-index">
-					<a href="/2019/06/15/jsp作用域/" title="jsp的9大内置对象和4大作用域">
-						<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-						
-	<a href="/2019/06/15/jsp作用域/" itemprop="url">
-		jsp的9大内置对象和4大作用域
-	</a>
-
-					</a>
-				</h3>
-				<p class="post-content">
-					
-						jsp的9大内置对象和4大作用域
-
-					
-				</p>
-				<p class="post-meta">
-					
-
-
-
-					
-
-	<!-- leancloud -->
-	<!--
-	时间：2018-11-27
-	描述：
-		文章访问量：visitors
-		文章喜欢量：likes	
-		文章排行榜：topNPost
-		其他得说明：
-			01-Cookie相关的函数 
-				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
-			02-visitors相关的函数 
-				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
-				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
-			03-topNPost相关的函数
-				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
-			04-likes相关的函数，
-				参考了01 & 02进行简单的设计与实现
--->
-
-
-	
-
-				</p>
-			</div>
-		</div>
-		
-		<div class="post" id="post">
-			<a class="post-cover" href="/2019/06/15/java的Servlet乱码处理/" title=" 处理Servlet的out响应乱码情况 ">
-				
-				<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg">
-			</a>
-
-			<div class="post-text">
-				<p class="post-time">
-					六月 15日, 2019
-				</p>	
-				<h3 class="post-title" id="post-title-index">
-					<a href="/2019/06/15/java的Servlet乱码处理/" title="处理Servlet的out响应乱码情况">
-						<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-						
-	<a href="/2019/06/15/java的Servlet乱码处理/" itemprop="url">
-		处理Servlet的out响应乱码情况
-	</a>
-
-					</a>
-				</h3>
-				<p class="post-content">
-					
-						在创建out对象之前打此代码：12$ request.setCharacterEncoding("UTF-8");$ response.setConten...
-					
-				</p>
-				<p class="post-meta">
-					
-
-
-
-					
-
-	<!-- leancloud -->
-	<!--
-	时间：2018-11-27
-	描述：
-		文章访问量：visitors
-		文章喜欢量：likes	
-		文章排行榜：topNPost
-		其他得说明：
-			01-Cookie相关的函数 
-				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
-			02-visitors相关的函数 
-				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
-				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
-			03-topNPost相关的函数
-				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
-			04-likes相关的函数，
-				参考了01 & 02进行简单的设计与实现
--->
-
-
-	
-
-				</p>
-			</div>
-		</div>
-		
-		<div class="post" id="post">
-			<a class="post-cover" href="/2019/06/15/idea控制台乱码/" title=" idea控制台中文乱码的问题 ">
-				
-				<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg">
-			</a>
-
-			<div class="post-text">
-				<p class="post-time">
-					六月 15日, 2019
-				</p>	
-				<h3 class="post-title" id="post-title-index">
-					<a href="/2019/06/15/idea控制台乱码/" title="idea控制台中文乱码的问题">
-						<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-						
-	<a href="/2019/06/15/idea控制台乱码/" itemprop="url">
-		idea控制台中文乱码的问题
-	</a>
-
-					</a>
-				</h3>
-				<p class="post-content">
-					
-						控制台出现乱码后，如果在file encoding中修改为UTF-8后仍未解决:123$找到intellij idea安装目录，bin文件夹下面idea6...
-					
-				</p>
-				<p class="post-meta">
-					
-
-
-
-					
-
-	<!-- leancloud -->
-	<!--
-	时间：2018-11-27
-	描述：
-		文章访问量：visitors
-		文章喜欢量：likes	
-		文章排行榜：topNPost
-		其他得说明：
-			01-Cookie相关的函数 
-				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
-			02-visitors相关的函数 
-				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
-				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
-			03-topNPost相关的函数
-				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
-			04-likes相关的函数，
-				参考了01 & 02进行简单的设计与实现
--->
-
-
-	
-
-				</p>
-			</div>
-		</div>
-		
-		<div class="post" id="post">
-			<a class="post-cover" href="/2019/06/15/idea初始化使用教程/" title=" Idea初始常用配置 ">
-				
-				<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg">
-			</a>
-
-			<div class="post-text">
-				<p class="post-time">
-					六月 15日, 2019
-				</p>	
-				<h3 class="post-title" id="post-title-index">
-					<a href="/2019/06/15/idea初始化使用教程/" title="Idea初始常用配置">
-						<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-						
-	<a href="/2019/06/15/idea初始化使用教程/" itemprop="url">
-		Idea初始常用配置
-	</a>
-
-					</a>
-				</h3>
-				<p class="post-content">
-					
-						Come现在我们一起来配置idea
-1.配置JDK1.1我们打开“File”–&gt;“project setting”，添加本地安装的JDK。（idea...
-					
-				</p>
-				<p class="post-meta">
-					
-
-
-
-					
-
-	<!-- leancloud -->
-	<!--
-	时间：2018-11-27
-	描述：
-		文章访问量：visitors
-		文章喜欢量：likes	
-		文章排行榜：topNPost
-		其他得说明：
-			01-Cookie相关的函数 
-				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
-			02-visitors相关的函数 
-				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
-				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
-			03-topNPost相关的函数
-				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
-			04-likes相关的函数，
-				参考了01 & 02进行简单的设计与实现
--->
-
-
-	
-
-				</p>
-			</div>
-		</div>
-		
-		<div class="post" id="post">
-			<a class="post-cover" href="/2019/06/15/hello-world/" title=" Hello World ">
-				
-				<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg">
-			</a>
-
-			<div class="post-text">
-				<p class="post-time">
-					六月 15日, 2019
-				</p>	
-				<h3 class="post-title" id="post-title-index">
-					<a href="/2019/06/15/hello-world/" title="Hello World">
-						<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-						
-	<a href="/2019/06/15/hello-world/" itemprop="url">
-		Hello World
-	</a>
-
-					</a>
-				</h3>
-				<p class="post-content">
-					
-						Welcome to Hexo! This is your very first post. Check documentation for more i...
-					
-				</p>
-				<p class="post-meta">
-					
-
-
-
-					
-
-	<!-- leancloud -->
-	<!--
-	时间：2018-11-27
-	描述：
-		文章访问量：visitors
-		文章喜欢量：likes	
-		文章排行榜：topNPost
-		其他得说明：
-			01-Cookie相关的函数 
-				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
-			02-visitors相关的函数 
-				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
-				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
-			03-topNPost相关的函数
-				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
-			04-likes相关的函数，
-				参考了01 & 02进行简单的设计与实现
--->
-
-
-	
-
-				</p>
-			</div>
-		</div>
-		
-		<div class="post" id="post">
-			<a class="post-cover" href="/2019/04/29/Spring/" title=" Spring ">
-				
-				<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg">
-			</a>
-
-			<div class="post-text">
-				<p class="post-time">
-					四月 29日, 2019
-				</p>	
-				<h3 class="post-title" id="post-title-index">
-					<a href="/2019/04/29/Spring/" title="Spring">
-						<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-						
-	<a href="/2019/04/29/Spring/" itemprop="url">
-		Spring
-	</a>
-
-					</a>
-				</h3>
-				<p class="post-content">
-					
-						Spring
+      <div class="outer">
+        <section id="main" class="body-wrap">
+  
+    <article id="post-关于博客复原" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/06/15/关于博客复原/">我的兄弟叫顺溜之还原博客</a>
+    </h1>
+  
+
+          
+      </header>
+    
+    <div class="article-entry " itemprop="articleBody">
+      
+        <div class="article-img">
+            <a href="/2019/06/15/关于博客复原/">
+                
+                <img src="http://yoursite.com/images/月色森林.jpg" alt="我的兄弟叫顺溜之还原博客" title="我的兄弟叫顺溜之还原博客">
+                
+            </a>
+        </div>
+        <div class="article-feed">
+            <p>
+                糟糕，重装系统了，博客没了怎么办！大概分为下面几个步骤1231. 环境搭建2. 安装Hexo3. 别瞎看只需要二步哦，忽略我好吗？？
+
+偷偷告诉你们没有备份博客也搞不定鸭
+
+
+第一步：环境搭建安装git （因为要给github上传文章）
+
+
+Windows: 直接下载和安装
+Mac：进入git网站下载和安装，或者进入这里下载
+Ubuntu：打开终端复制粘贴命令 sudo ...
+            </p>
+        </div>
+      
+        
+    </div>
+    <footer class="article-footer">
+        
+        <ul class="article-footer-menu">
+            
+                <li><i class="fa fa-calendar"></i>2019-06-15</li>
+            
+            
+        </ul>
+        
+            <a href="/2019/06/15/关于博客复原/#more" class="article-more-link">查看&gt;&gt;</a>
+        
+    </footer>
+  </div>
+</article>
+
+
+  
+    <article id="post-MySQL忘记root密码的解决办法" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/06/15/MySQL忘记root密码的解决办法/">mysql忘记密码解决办法</a>
+    </h1>
+  
+
+          
+      </header>
+    
+    <div class="article-entry " itemprop="articleBody">
+      
+        <div class="article-img">
+            <a href="/2019/06/15/MySQL忘记root密码的解决办法/">
+                
+                <img src="http://yoursite.com/images/月色森林.jpg" alt="mysql忘记密码解决办法" title="mysql忘记密码解决办法">
+                
+            </a>
+        </div>
+        <div class="article-feed">
+            <p>
+                
+首先检查mysql服务是否启动，若已启动则先将其停止服务，可在开始菜单的运行，使用cmd，在dos命令窗口中输入如下命令：1net stop mysql
+
+
+
+再打开一个cmd窗口，使用cd命令，进入到mysql安装路径的bin目录，输入下列命令（敲回车后，保持窗口的状态，不要关闭该窗口，直接进行下面的步骤即可；）：
+
+/下面语句中的文件路径需要改成你自己的文件路径/1...
+            </p>
+        </div>
+      
+        
+    </div>
+    <footer class="article-footer">
+        
+        <ul class="article-footer-menu">
+            
+                <li><i class="fa fa-calendar"></i>2019-06-15</li>
+            
+            
+        </ul>
+        
+            <a href="/2019/06/15/MySQL忘记root密码的解决办法/#more" class="article-more-link">查看&gt;&gt;</a>
+        
+    </footer>
+  </div>
+</article>
+
+
+  
+    <article id="post-maven的作用" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/06/15/maven的作用/">maven的作用</a>
+    </h1>
+  
+
+          
+      </header>
+    
+    <div class="article-entry " itemprop="articleBody">
+      
+        <div class="article-img">
+            <a href="/2019/06/15/maven的作用/">
+                
+                <img src="http://yoursite.com/images/月色森林.jpg" alt="maven的作用" title="maven的作用">
+                
+            </a>
+        </div>
+        <div class="article-feed">
+            <p>
+                第一个作用：帮你下载jar包1$ maven项目会有一个 pom.xml文件， 在这个文件里面，只要你添加相应配置，他就会自动帮你下载相应jar包，不用你铺天盖地的到处搜索你需要的jar包了
+第二个作用：寻找依赖，帮你下载依赖 123456$  寻找jar包是第一基本功能，寻找依赖在这个是在这个基础上的功能。 $  在maven的代码库中，每一个jar包也有自己的 pom...
+            </p>
+        </div>
+      
+        
+    </div>
+    <footer class="article-footer">
+        
+        <ul class="article-footer-menu">
+            
+                <li><i class="fa fa-calendar"></i>2019-06-15</li>
+            
+            
+        </ul>
+        
+            <a href="/2019/06/15/maven的作用/#more" class="article-more-link">查看&gt;&gt;</a>
+        
+    </footer>
+  </div>
+</article>
+
+
+  
+    <article id="post-JSTL和EL互相使用注意什么" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/06/15/JSTL和EL互相使用注意什么/">JSTL和EL互相使用注意什么</a>
+    </h1>
+  
+
+          
+      </header>
+    
+    <div class="article-entry " itemprop="articleBody">
+      
+        <div class="article-img">
+            <a href="/2019/06/15/JSTL和EL互相使用注意什么/">
+                
+                <img src="http://yoursite.com/images/月色森林.jpg" alt="JSTL和EL互相使用注意什么" title="JSTL和EL互相使用注意什么">
+                
+            </a>
+        </div>
+        <div class="article-feed">
+            <p>
+                JSTL和EL互相使用注意什么在单面使用EL不需要在jsp页面引入库。不过el一般和JSTL标签配合使用。这时需要引入1&lt;%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%&gt;
+1,访问Bean属性如：${user.uname}等价于1&lt;% User user=(User)reques...
+            </p>
+        </div>
+      
+        
+    </div>
+    <footer class="article-footer">
+        
+        <ul class="article-footer-menu">
+            
+                <li><i class="fa fa-calendar"></i>2019-06-15</li>
+            
+            
+        </ul>
+        
+            <a href="/2019/06/15/JSTL和EL互相使用注意什么/#more" class="article-more-link">查看&gt;&gt;</a>
+        
+    </footer>
+  </div>
+</article>
+
+
+  
+    <article id="post-jsp作用域" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/06/15/jsp作用域/">jsp的9大内置对象和4大作用域</a>
+    </h1>
+  
+
+          
+      </header>
+    
+    <div class="article-entry " itemprop="articleBody">
+      
+        <div class="article-img">
+            <a href="/2019/06/15/jsp作用域/">
+                
+                <img src="http://yoursite.com/images/月色森林.jpg" alt="jsp的9大内置对象和4大作用域" title="jsp的9大内置对象和4大作用域">
+                
+            </a>
+        </div>
+        <div class="article-feed">
+            <p>
+                jsp的9大内置对象和4大作用域
+
+            </p>
+        </div>
+      
+        
+    </div>
+    <footer class="article-footer">
+        
+        <ul class="article-footer-menu">
+            
+                <li><i class="fa fa-calendar"></i>2019-06-15</li>
+            
+            
+        </ul>
+        
+            <a href="/2019/06/15/jsp作用域/#more" class="article-more-link">查看&gt;&gt;</a>
+        
+    </footer>
+  </div>
+</article>
+
+
+  
+    <article id="post-java的Servlet乱码处理" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/06/15/java的Servlet乱码处理/">处理Servlet的out响应乱码情况</a>
+    </h1>
+  
+
+          
+      </header>
+    
+    <div class="article-entry " itemprop="articleBody">
+      
+        <div class="article-img">
+            <a href="/2019/06/15/java的Servlet乱码处理/">
+                
+                <img src="http://yoursite.com/images/月色森林.jpg" alt="处理Servlet的out响应乱码情况" title="处理Servlet的out响应乱码情况">
+                
+            </a>
+        </div>
+        <div class="article-feed">
+            <p>
+                在创建out对象之前打此代码：12$ request.setCharacterEncoding("UTF-8");$ response.setContentType("text/html;charset=UTF-8");
+创建out对象代码：1$ PrintWriter out = response.getWriter();
+
+            </p>
+        </div>
+      
+        
+    </div>
+    <footer class="article-footer">
+        
+        <ul class="article-footer-menu">
+            
+                <li><i class="fa fa-calendar"></i>2019-06-15</li>
+            
+            
+        </ul>
+        
+            <a href="/2019/06/15/java的Servlet乱码处理/#more" class="article-more-link">查看&gt;&gt;</a>
+        
+    </footer>
+  </div>
+</article>
+
+
+  
+    <article id="post-idea控制台乱码" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/06/15/idea控制台乱码/">idea控制台中文乱码的问题</a>
+    </h1>
+  
+
+          
+      </header>
+    
+    <div class="article-entry " itemprop="articleBody">
+      
+        <div class="article-img">
+            <a href="/2019/06/15/idea控制台乱码/">
+                
+                <img src="http://yoursite.com/images/月色森林.jpg" alt="idea控制台中文乱码的问题" title="idea控制台中文乱码的问题">
+                
+            </a>
+        </div>
+        <div class="article-feed">
+            <p>
+                控制台出现乱码后，如果在file encoding中修改为UTF-8后仍未解决:123$找到intellij idea安装目录，bin文件夹下面idea64.exe.vmoptions和idea.exe.vmoptions这两个文件，分别在这两个文件中添加：-Dfile.encoding=UTF-8$ 在tomcat的启动参数中设置 -Dfile.encoding=UTF...
+            </p>
+        </div>
+      
+        
+    </div>
+    <footer class="article-footer">
+        
+        <ul class="article-footer-menu">
+            
+                <li><i class="fa fa-calendar"></i>2019-06-15</li>
+            
+            
+        </ul>
+        
+            <a href="/2019/06/15/idea控制台乱码/#more" class="article-more-link">查看&gt;&gt;</a>
+        
+    </footer>
+  </div>
+</article>
+
+
+  
+    <article id="post-idea初始化使用教程" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/06/15/idea初始化使用教程/">Idea初始常用配置</a>
+    </h1>
+  
+
+          
+      </header>
+    
+    <div class="article-entry " itemprop="articleBody">
+      
+        <div class="article-img">
+            <a href="/2019/06/15/idea初始化使用教程/">
+                
+                <img src="http://yoursite.com/images/月色森林.jpg" alt="Idea初始常用配置" title="Idea初始常用配置">
+                
+            </a>
+        </div>
+        <div class="article-feed">
+            <p>
+                Come现在我们一起来配置idea
+1.配置JDK1.1我们打开“File”–&gt;“project setting”，添加本地安装的JDK。（idea自己也会带JDK）
+2.配置maven2.1打开“File”–&gt;“Other settings”–&gt;“default settings”，搜索“maven”即可（也可以在setting里设置，建议通过defa...
+            </p>
+        </div>
+      
+        
+    </div>
+    <footer class="article-footer">
+        
+        <ul class="article-footer-menu">
+            
+                <li><i class="fa fa-calendar"></i>2019-06-15</li>
+            
+            
+        </ul>
+        
+            <a href="/2019/06/15/idea初始化使用教程/#more" class="article-more-link">查看&gt;&gt;</a>
+        
+    </footer>
+  </div>
+</article>
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/06/15/hello-world/">Hello World</a>
+    </h1>
+  
+
+          
+      </header>
+    
+    <div class="article-entry " itemprop="articleBody">
+      
+        <div class="article-img">
+            <a href="/2019/06/15/hello-world/">
+                
+                <img src="http://yoursite.com/images/月色森林.jpg" alt="Hello World" title="Hello World">
+                
+            </a>
+        </div>
+        <div class="article-feed">
+            <p>
+                Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on ...
+            </p>
+        </div>
+      
+        
+    </div>
+    <footer class="article-footer">
+        
+        <ul class="article-footer-menu">
+            
+                <li><i class="fa fa-calendar"></i>2019-06-15</li>
+            
+            
+        </ul>
+        
+            <a href="/2019/06/15/hello-world/#more" class="article-more-link">查看&gt;&gt;</a>
+        
+    </footer>
+  </div>
+</article>
+
+
+  
+    <article id="post-Spring" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/04/29/Spring/">Spring</a>
+    </h1>
+  
+
+          
+      </header>
+    
+    <div class="article-entry " itemprop="articleBody">
+      
+        <div class="article-img">
+            <a href="/2019/04/29/Spring/">
+                
+                <img src="http://yoursite.com/images/月色森林.jpg" alt="Spring" title="Spring">
+                
+            </a>
+        </div>
+        <div class="article-feed">
+            <p>
+                Spring
 
 1.了解Spring框架Spring框架是由于软件开发的复杂性而创建的。
-Spring使用的是基本的JavaBean来完成以前只可能由EJ...
-					
-				</p>
-				<p class="post-meta">
-					
+Spring使用的是基本的JavaBean来完成以前只可能由EJB完成的事情。
+然而，Spring的用途不仅仅限于服务器端的开发。
+从简单性、可测试性和松耦合性角度而言，绝大部分Java应用都可以从Spring中受益。
+Spring是一个轻量级控制反转(IoC)和面向切面(AOP)的...
+            </p>
+        </div>
+      
+        
+    </div>
+    <footer class="article-footer">
+        
+        <ul class="article-footer-menu">
+            
+                <li><i class="fa fa-calendar"></i>2019-04-29</li>
+            
+            
+        </ul>
+        
+            <a href="/2019/04/29/Spring/#more" class="article-more-link">查看&gt;&gt;</a>
+        
+    </footer>
+  </div>
+</article>
 
 
+  
 
-					
-
-	<!-- leancloud -->
-	<!--
-	时间：2018-11-27
-	描述：
-		文章访问量：visitors
-		文章喜欢量：likes	
-		文章排行榜：topNPost
-		其他得说明：
-			01-Cookie相关的函数 
-				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
-			02-visitors相关的函数 
-				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
-				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
-			03-topNPost相关的函数
-				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
-			04-likes相关的函数，
-				参考了01 & 02进行简单的设计与实现
--->
+</section>
+        
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+<p>
+    <span id="busuanzi_container_site_uv" style="display:none">
+        总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style="display:none">
+        总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
 
 
-	
-
-				</p>
-			</div>
-		</div>
-		
-	</div>
-	
-	
-	<div id="pagination">
-		
-	</div>
-
-	
-
-</div>
-	
-
-		</main>
-
-		<!--footer-->
-		<footer>
-	<div class="social">
-		<ul>
-	
-		<li>
-			<a href="http://github.com/" target="_blank">
-				<i class="fa fa-github"></i>
-			</a>
-		</li>
-	
-		<li>
-			<a href="http://github.com/" target="_blank">
-				<i class="fa fa-weibo"></i>
-			</a>
-		</li>
-	
-		<li>
-			<a href="http://github.com/" target="_blank">
-				<i class="fa fa-pinterest"></i>
-			</a>
-		</li>
-	
-		<li>
-			<a href="http://github.com/" target="_blank">
-				<i class="fa fa-instagram"></i>
-			</a>
-		</li>
-	
-		<li>
-			<a href="http://github.com/" target="_blank">
-				<i class="fa fa-twitter"></i>
-			</a>
-		</li>
-	
-		<li>
-			<a href="/atom.xml" target="_blank">
-				<i class="fa fa-rss"></i>
-			</a>
-		</li>
-			
-</ul>
-
-	</div>
-		
-	<div class="copyright">
-		<p>
-			 
-				&copy;2017 - 2019, content by 来杯java吗. All Rights Reserved.
-			
-			
-			
-
-	<!-- busuanzi -->
-	<!-- busuanzi -->
-
-		
-	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-	
-
-		<span id="busuanzi_container_site_pv">
-	    	本站总访问量<span id="busuanzi_value_site_pv"></span>次
-		</span>
-
-		<span id="busuanzi_container_site_uv">
-	  		本站访客数<span id="busuanzi_value_site_uv"></span>人次
-		</span>
-		
-	
-
-
-
-
-		</p>
-		<p>
-			<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.
-			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
-			<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>				
-		</p>
-	</div>		
+      <p>
+        Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
+        Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
+      &copy; 2019 来杯java吗<br>
+      </p>
+    </div>
+  </div>
 </footer>
-		
-	<!-- set '1' to show motto in all pages! -->
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var mihoConfig = {
+      root: "http://yoursite.com",
+      animate: true,
+      isHome: true,
+      share: true,
+      reward: 1
+  }
+</script>
+<div class="sidebar">
+    <div id="sidebar-search" title="Search">
+        <i class="fa fa-search"></i>
+    </div>
+    <div id="sidebar-category" title="Categories">
+        <i class="fa fa-book"></i>
+    </div>
+    <div id="sidebar-tag" title="Tags">
+        <i class="fa fa-tags"></i>
+    </div>
+    <div id="sidebar-top">
+        <span class="sidebar-top-icon"><i class="fa fa-angle-up"></i></span>
+    </div>
+</div>
+<div class="sidebar-menu-box" id="sidebar-menu-box">
+    <div class="sidebar-menu-box-container">
+        <div id="sidebar-menu-box-categories">
+            
+        </div>
+        <div id="sidebar-menu-box-tags">
+            
+        </div>
+    </div>
+    <a href="javascript:;" class="sidebar-menu-box-close">&times;</a>
+</div>
+<div class="mobile-header-menu-nav" id="mobile-header-menu-nav">
+    <div class="mobile-header-menu-container">
+        <span class="title">Menus</span>
+        <ul class="mobile-header-menu-navbar">
+            
+            <li>
+                <a ">
+                    <i class="fa fa-home"></i><span>Home</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="/">
+                    <i class="fa fa-archive"></i><span>Archives</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="/about">
+                    <i class="fa fa-user"></i><span>About</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile-header-tag-container">
+        <span class="title">Tags</span>
+        <div id="mobile-header-container-tags">
+            
+        </div>
+    </div>
+</div>
+<div class="search-wrap">
+    <span class="search-close">&times;</span>
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+            <i class="icon icon-lg icon-chevron-left"></i>
+        </a>
+        <input class="search-field" placeholder="Search..." id="keywords">
+        <a id="search-submit" href="javascript:;">
+            <i class="fa fa-search"></i>
+        </a>
+    <div class="search-container" id="search-container">
+        <ul class="search-result" id="search-result">
+        </ul>
+    </div>
+</div>
 
-	<script src="/plugin/motto/motto.js"></script>
-	
-	<script type="text/javascript">
-		$(".motto").html( getMingYanContent() );
-	</script>	
-
-
-
-
-
-<!-- love effect -->
-
-	<script src="/plugin/love/love.js"></script>
-
-
-<!-- back to top -->
-
-	
-	<div id="totop">
-  		<a href="javascript:;" name="TOTOP" class="fa fa-arrow-up"></a>
-	</div>
-
-
-
-
-<!-- site analysis -->
-
-
-	<!-- site-analysis -->
-	
-	
-	
-	
-	
- 
-
-<script src="/plugin/vibrant/vibrant.js"></script>
-<script src="/plugin/chinese/chinese.js"></script>
-<script src="/plugin/imgLazyLoader/yall.min.js"></script>
-<script src="/plugin/imgResize/jquery.resizeimagetoparent.min.js"></script>
-<script src="/plugin/nicescroll/jquery.nicescroll.js"></script>
-<script src="/js/resizediv.js"></script>
+<div id="search-tpl">
+    <li class="search-result-item">
+        <a href="{url}" class="search-item-li">
+            <span class="search-item-li-title" title="{title}">{title}</span>
+        </a>
+    </li>
+</div>
+<script src="/js/search.js"></script>
 <script src="/js/main.js"></script>
-	</body>	
+
+
+  <script src="//cdn.bootcss.com/particles.js/2.0.0/particles.min.js"></script>
+  <div id="particles"></div>
+  <script src="/js/particles.js"></script>
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  <script src="//cdn.bootcss.com/scrollReveal.js/3.0.5/scrollreveal.js"></script>
+  <script src="/js/animate.js"></script>
+
+
+  </div>
+</body>
 </html>

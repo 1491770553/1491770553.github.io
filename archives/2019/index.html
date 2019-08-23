@@ -1,741 +1,470 @@
-<!--
-	作者：Sariay
-	时间：2018-09-25
-	描述：There may be a bug, but don't worry, QiLing(器灵) says that it can work normally!
--->
 <!DOCTYPE html>
-<html class="html-loading">
-		
-
+<html>
 <head><meta name="generator" content="Hexo 3.8.0">
-	<meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-  <title>
-    
-      文章归档: 2019 | 来杯java吗的博客
-    
-  </title>
-  <meta name="author" content="来杯java吗">
-  <meta name="keywords" content>
-  <meta name="description" content="精通java，HTML5，jquery，spring，oracle，SqlServer，mysql，C#，jsp等...">
-	<!-- favicon -->
-  <link rel="shortcut icon" href="/img/favicon.ico">
-
-  <!-- css -->
-  <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="/css/Annie.css">
+  <meta charset="utf-8">
   
-  <!-- jquery -->
-	<script src="/js/jquery.min.js"></script>
+  <title>Archives: 2019 | 来杯java吗的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="keywords" content="一花一树一世界">
+  
+  <meta property="og:type" content="website">
+<meta property="og:title" content="来杯java吗的博客">
+<meta property="og:url" content="http://yoursite.com/archives/2019/index.html">
+<meta property="og:site_name" content="来杯java吗的博客">
+<meta property="og:locale" content="default">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="来杯java吗的博客">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/pace.min.js"></script>
+  
 
-  <!-- leancloud -->
-  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
-<script src="/js/leancloud.js"></script>
+  
+  
+
 </head>
-	<body>
-		<!-- Preloader -->
-
-	<div id="preloader">
-		<div class="pre-container">
-			
-				<div class="spinner">
-					<div class="double-bounce1"></div>
-					<div class="double-bounce2"></div>
-				</div>
-						
-		</div>
-	</div>
-
-
-<!-- header -->
-<header class="fixbackground" data-img-mode="normal" data-normal-src="/img/1.jpg" data-random-max="110" data-random-src="https://sariay.github.io/Random-img/">
-	<div class="mask">
-		<!-- Logo and navigation -->
-		<div class="h-header">
-			<div id="logo">
-				<a href="/">
-						
-						<img src="/img/logo.png" alt="Logo">
-					
-				</a>
-			</div>
-			
-			<div id="navigation-show">
-				<ul>
-	
-		<li class="menu-home">
-			<a href="/" class="menu-item-home">主页</a>
-		</li>
-	
-		<li class="menu-archive">
-			<a href="/archives" class="menu-item-archive">归档</a>
-		</li>
-	
-		<li class="menu-categories">
-			<a href="/categories" class="menu-item-categories">分类</a>
-		</li>
-	
-		<li class="menu-tags">
-			<a href="/tags" class="menu-item-tags">标签</a>
-		</li>
-	
-		<li class="menu-about">
-			<a href="/about" class="menu-item-about">关于</a>
-		</li>
-	
-		<li class="menu-gallery">
-			<a href="/gallery" class="menu-item-gallery">相册</a>
-		</li>
-	
-
-	
-</ul>
-			</div>				
-		</div>
-
-		<!-- motto -->
-		<div class="h-body">	
-			
-				<p class="motto"></p>
-			
-		</div>
-		
-		<!-- others: such as time... -->			
-		<div class="h-footer">
-			<a href="javascript:;" id="read-more"><i class="fa fa-angle-double-down" aria-hidden="true"></i>
-			</a>
-
-			
-				<!-- 
-	This is only a demo, please go to "https://time.is" to set your city time! 
--->
-<style type="text/css">
-	.header-date {
-		font-size: 1.6rem;
-		color: #fff;
-		position: absolute;
-		bottom: 5px;
-		right: 1rem;
-		writing-mode: tb-rl;
-	}	
-	
-	.header-date a {
-		border-bottom: none;
-	}
-
-	@media only screen and (max-width: 768 ) {
-		.header-date {
-			font-size: 1rem;
-		}			
-	}
-</style>
-<div class="header-date">
-	<a href="https://time.is/Beijing" id="time_is_link" rel="nofollow"></a>
-	<span id="Beijing_z43d"></span>
-</div>
-<script src="//widget.time.is/zh.js"></script>
-<script>
-	time_is_widget.init({
-		Beijing_z43d:{
-			template:"DATE", 
-			date_format:"year年 monthname dnum日"
-		}
-	});
-</script>
-			
-		</div>
-	</div>
-</header>
-
-<div id="navigation-hide">
-	<!-- Progress bar -->
-	<div id="progress-bar"></div>
-
-	<!-- Progress percent -->
-	<div id="progress-percentage"><h1>0.0%</h1></div>
-
-	<div class="toc-switch"><span class="switch-button">目录</span></div>
-
-	<!-- Page title -->
-	<p>
-		
-			文章归档
-		
-	</p>
-
-	<!-- Nav trigger for navigation-H-->
-	<a class="nav-trigger"><span></span></a>
-</div>
-
-<!-- Navigation in div(id="navigation-H") -->
-<nav class="nav-container" id="cd-nav">
-	<div class="nav-header">
-		<h3>Navigation</h3>
-		<a href="javascript:;" class="nav-close"></a>
-	</div>
-	<div class="nav-body">
-		<ul>
-	
-		<li class="menu-home">
-			<a href="/" class="menu-item-home">主页</a>
-		</li>
-	
-		<li class="menu-archive">
-			<a href="/archives" class="menu-item-archive">归档</a>
-		</li>
-	
-		<li class="menu-categories">
-			<a href="/categories" class="menu-item-categories">分类</a>
-		</li>
-	
-		<li class="menu-tags">
-			<a href="/tags" class="menu-item-tags">标签</a>
-		</li>
-	
-		<li class="menu-about">
-			<a href="/about" class="menu-item-about">关于</a>
-		</li>
-	
-		<li class="menu-gallery">
-			<a href="/gallery" class="menu-item-gallery">相册</a>
-		</li>
-	
-
-	
-</ul>
-	</div>
-	<div class="nav-footer">
-		<ul>
-	
-		<li>
-			<a href="http://github.com/" target="_blank">
-				<i class="fa fa-github"></i>
-			</a>
-		</li>
-	
-		<li>
-			<a href="http://github.com/" target="_blank">
-				<i class="fa fa-weibo"></i>
-			</a>
-		</li>
-	
-		<li>
-			<a href="http://github.com/" target="_blank">
-				<i class="fa fa-pinterest"></i>
-			</a>
-		</li>
-	
-		<li>
-			<a href="http://github.com/" target="_blank">
-				<i class="fa fa-instagram"></i>
-			</a>
-		</li>
-	
-		<li>
-			<a href="http://github.com/" target="_blank">
-				<i class="fa fa-twitter"></i>
-			</a>
-		</li>
-	
-		<li>
-			<a href="/atom.xml" target="_blank">
-				<i class="fa fa-rss"></i>
-			</a>
-		</li>
-			
-</ul>
-
-	</div>
-</nav>
-			
-		<!--main-->
-		<main>
-			<!--
-	时间：2018-11-08
-	描述：The archive module refers to 'https://1984n.win/archives-post/' & 'http://1900.live/one-theme/', include js、css. Relevant rights reserved by them! 
--->
-<div class="layout-archive">
-    <div class="i-container">
-        <i class="fa fa-book">
-			<!--
-	Post number counter for archive.ejs.  
--->
-
-	
-	总计 10 篇 文章
-	
-
-		</i>
+</html>
+<body>
+  <div id="container">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer">
+        <div id="header-menu" class="header-menu-pos animated">
+            <div class="header-menu-container">
+                <a href="/" class="left">
+                    <span class="site-title"></span>
+                </a>
+                <nav id="header-menu-nav" class="right">
+                    
+                    <a ">
+                        <i class="fa fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                    
+                    <a href="/">
+                        <i class="fa fa-archive"></i>
+                        <span>Archives</span>
+                    </a>
+                    
+                    <a href="/about">
+                        <i class="fa fa-user"></i>
+                        <span>About</span>
+                    </a>
+                    
+                </nav>
+                <a class="mobile-header-menu-button">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div id="header-row">
+            <div id="logo">
+                <a href="/">
+                    <img src="/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-info">
+                <div id="header-title">
+                    
+                </div>
+                <div id="header-description">
+                    
+                    <h3>
+                        一花一树一世界
+                    </h3>
+                    
+                </div>
+            </div>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a title="MinHow" target="_blank" href="//minhow.com">
+                            <i class="fa fa-home fa-2x"></i></a>
+                    
+                        <a title="Github" target="_blank" ">
+                            <i class="fa fa-github fa-2x"></i></a>
+                    
+                        <a title="Weibo" target="_blank" ">
+                            <i class="fa fa-weibo fa-2x"></i></a>
+                    
+                        <a title="Twitter" target="_blank" ">
+                            <i class="fa fa-twitter fa-2x"></i></a>
+                    
+                </div>
+            </nav>
+        </div>
     </div>
+</header>
+      <div class="outer">
+        <section id="main" class="body-wrap">
+  
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2019" class="archive-year">2019</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2019/06/15/关于博客复原/" class="archive-article-date">
+  <time datetime="2019-06-15T15:31:24.683Z" itemprop="datePublished">06-15</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2019/06/15/关于博客复原/">我的兄弟叫顺溜之还原博客</a>
+    </h1>
+  
 
-    <!-- Archive by year, display in page( archive ) -->
-    <div id="layout-archive-year" style="display: 
-                 	
-            block">        
+    </header>
+      
+  </div>
+</article>
+
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2019/06/15/MySQL忘记root密码的解决办法/" class="archive-article-date">
+  <time datetime="2019-06-15T15:31:24.679Z" itemprop="datePublished">06-15</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2019/06/15/MySQL忘记root密码的解决办法/">mysql忘记密码解决办法</a>
+    </h1>
+  
+
+    </header>
+      
+  </div>
+</article>
+
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2019/06/15/maven的作用/" class="archive-article-date">
+  <time datetime="2019-06-15T15:31:24.677Z" itemprop="datePublished">06-15</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2019/06/15/maven的作用/">maven的作用</a>
+    </h1>
+  
+
+    </header>
+      
+  </div>
+</article>
+
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2019/06/15/JSTL和EL互相使用注意什么/" class="archive-article-date">
+  <time datetime="2019-06-15T15:31:24.675Z" itemprop="datePublished">06-15</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2019/06/15/JSTL和EL互相使用注意什么/">JSTL和EL互相使用注意什么</a>
+    </h1>
+  
+
+    </header>
+      
+  </div>
+</article>
+
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2019/06/15/jsp作用域/" class="archive-article-date">
+  <time datetime="2019-06-15T15:31:24.671Z" itemprop="datePublished">06-15</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2019/06/15/jsp作用域/">jsp的9大内置对象和4大作用域</a>
+    </h1>
+  
+
+    </header>
+      
+  </div>
+</article>
+
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2019/06/15/java的Servlet乱码处理/" class="archive-article-date">
+  <time datetime="2019-06-15T15:31:24.667Z" itemprop="datePublished">06-15</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2019/06/15/java的Servlet乱码处理/">处理Servlet的out响应乱码情况</a>
+    </h1>
+  
+
+    </header>
+      
+  </div>
+</article>
+
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2019/06/15/idea控制台乱码/" class="archive-article-date">
+  <time datetime="2019-06-15T15:31:24.665Z" itemprop="datePublished">06-15</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2019/06/15/idea控制台乱码/">idea控制台中文乱码的问题</a>
+    </h1>
+  
+
+    </header>
+      
+  </div>
+</article>
+
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2019/06/15/idea初始化使用教程/" class="archive-article-date">
+  <time datetime="2019-06-15T15:31:24.663Z" itemprop="datePublished">06-15</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2019/06/15/idea初始化使用教程/">Idea初始常用配置</a>
+    </h1>
+  
+
+    </header>
+      
+  </div>
+</article>
+
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2019/06/15/hello-world/" class="archive-article-date">
+  <time datetime="2019-06-15T15:31:24.661Z" itemprop="datePublished">06-15</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2019/06/15/hello-world/">Hello World</a>
+    </h1>
+  
+
+    </header>
+      
+  </div>
+</article>
+
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2019/04/29/Spring/" class="archive-article-date">
+  <time datetime="2019-04-29T10:43:42.000Z" itemprop="datePublished">04-29</time>
+</a>
+      
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2019/04/29/Spring/">Spring</a>
+    </h1>
+  
+
+    </header>
+      
+  </div>
+</article>
+
+  
+  
+    </div></section>
+  
+
+</section>
         
-        
-        <ul>
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+<p>
+    <span id="busuanzi_container_site_uv" style="display:none">
+        总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style="display:none">
+        总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+      <p>
+        Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
+        Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
+      &copy; 2019 来杯java吗<br>
+      </p>
+    </div>
+  </div>
+</footer>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var mihoConfig = {
+      root: "http://yoursite.com",
+      animate: true,
+      isHome: false,
+      share: true,
+      reward: 1
+  }
+</script>
+<div class="sidebar">
+    <div id="sidebar-search" title="Search">
+        <i class="fa fa-search"></i>
+    </div>
+    <div id="sidebar-category" title="Categories">
+        <i class="fa fa-book"></i>
+    </div>
+    <div id="sidebar-tag" title="Tags">
+        <i class="fa fa-tags"></i>
+    </div>
+    <div id="sidebar-top">
+        <span class="sidebar-top-icon"><i class="fa fa-angle-up"></i></span>
+    </div>
+</div>
+<div class="sidebar-menu-box" id="sidebar-menu-box">
+    <div class="sidebar-menu-box-container">
+        <div id="sidebar-menu-box-categories">
             
-                <li>
-                    <a href="/2019/06/15/关于博客复原/">
-            			<em year="2019">
-                            06-15
-                        </em>
-        			    <span itemprop="name">
-                            我的兄弟叫顺溜之还原博客
-                        </span>
-        			    
-                    </a>
-                </li>
+        </div>
+        <div id="sidebar-menu-box-tags">
             
-                <li>
-                    <a href="/2019/06/15/MySQL忘记root密码的解决办法/">
-            			<em year="2019">
-                            06-15
-                        </em>
-        			    <span itemprop="name">
-                            mysql忘记密码解决办法
-                        </span>
-        			    
-                    </a>
-                </li>
+        </div>
+    </div>
+    <a href="javascript:;" class="sidebar-menu-box-close">&times;</a>
+</div>
+<div class="mobile-header-menu-nav" id="mobile-header-menu-nav">
+    <div class="mobile-header-menu-container">
+        <span class="title">Menus</span>
+        <ul class="mobile-header-menu-navbar">
             
-                <li>
-                    <a href="/2019/06/15/maven的作用/">
-            			<em year="2019">
-                            06-15
-                        </em>
-        			    <span itemprop="name">
-                            maven的作用
-                        </span>
-        			    
-                    </a>
-                </li>
+            <li>
+                <a ">
+                    <i class="fa fa-home"></i><span>Home</span>
+                </a>
+            </li>
             
-                <li>
-                    <a href="/2019/06/15/JSTL和EL互相使用注意什么/">
-            			<em year="2019">
-                            06-15
-                        </em>
-        			    <span itemprop="name">
-                            JSTL和EL互相使用注意什么
-                        </span>
-        			    
-                    </a>
-                </li>
+            <li>
+                <a href="/">
+                    <i class="fa fa-archive"></i><span>Archives</span>
+                </a>
+            </li>
             
-                <li>
-                    <a href="/2019/06/15/jsp作用域/">
-            			<em year="2019">
-                            06-15
-                        </em>
-        			    <span itemprop="name">
-                            jsp的9大内置对象和4大作用域
-                        </span>
-        			    
-                    </a>
-                </li>
-            
-                <li>
-                    <a href="/2019/06/15/java的Servlet乱码处理/">
-            			<em year="2019">
-                            06-15
-                        </em>
-        			    <span itemprop="name">
-                            处理Servlet的out响应乱码情况
-                        </span>
-        			    
-                    </a>
-                </li>
-            
-                <li>
-                    <a href="/2019/06/15/idea控制台乱码/">
-            			<em year="2019">
-                            06-15
-                        </em>
-        			    <span itemprop="name">
-                            idea控制台中文乱码的问题
-                        </span>
-        			    
-                    </a>
-                </li>
-            
-                <li>
-                    <a href="/2019/06/15/idea初始化使用教程/">
-            			<em year="2019">
-                            06-15
-                        </em>
-        			    <span itemprop="name">
-                            Idea初始常用配置
-                        </span>
-        			    
-                    </a>
-                </li>
-            
-                <li>
-                    <a href="/2019/06/15/hello-world/">
-            			<em year="2019">
-                            06-15
-                        </em>
-        			    <span itemprop="name">
-                            Hello World
-                        </span>
-        			    
-                    </a>
-                </li>
-            
-                <li>
-                    <a href="/2019/04/29/Spring/">
-            			<em year="2019">
-                            04-29
-                        </em>
-        			    <span itemprop="name">
-                            Spring
-                        </span>
-        			    
-                    </a>
-                </li>
+            <li>
+                <a href="/about">
+                    <i class="fa fa-user"></i><span>About</span>
+                </a>
+            </li>
             
         </ul>
     </div>
-
-     <!-- Archive by month, called by page( categories, tags... ) -->
-    <div id="layout-archive-month" style="display: 
-         
-            none"> 
-        
-
-        
-        
+    <div class="mobile-header-tag-container">
+        <span class="title">Tags</span>
+        <div id="mobile-header-container-tags">
             
-
-            
-                
-                <h3 class="archive-year">
-                    <!-- <a href="/archives/2019/06"> -->
-                    <a>
-                        2019 - 06
-                    </a>
-                </h3>
-            
-
-            <ul>
-                <li>
-                    <a href="/2019/06/15/关于博客复原/">
-                        <em>
-                            06-15
-                        </em>
-                        <span itemprop="name">
-                            我的兄弟叫顺溜之还原博客
-                        </span>
-                               
-                    </a>
-                </li>
-            </ul>
-        
-            
-
-            
-
-            <ul>
-                <li>
-                    <a href="/2019/06/15/MySQL忘记root密码的解决办法/">
-                        <em>
-                            06-15
-                        </em>
-                        <span itemprop="name">
-                            mysql忘记密码解决办法
-                        </span>
-                               
-                    </a>
-                </li>
-            </ul>
-        
-            
-
-            
-
-            <ul>
-                <li>
-                    <a href="/2019/06/15/maven的作用/">
-                        <em>
-                            06-15
-                        </em>
-                        <span itemprop="name">
-                            maven的作用
-                        </span>
-                               
-                    </a>
-                </li>
-            </ul>
-        
-            
-
-            
-
-            <ul>
-                <li>
-                    <a href="/2019/06/15/JSTL和EL互相使用注意什么/">
-                        <em>
-                            06-15
-                        </em>
-                        <span itemprop="name">
-                            JSTL和EL互相使用注意什么
-                        </span>
-                               
-                    </a>
-                </li>
-            </ul>
-        
-            
-
-            
-
-            <ul>
-                <li>
-                    <a href="/2019/06/15/jsp作用域/">
-                        <em>
-                            06-15
-                        </em>
-                        <span itemprop="name">
-                            jsp的9大内置对象和4大作用域
-                        </span>
-                               
-                    </a>
-                </li>
-            </ul>
-        
-            
-
-            
-
-            <ul>
-                <li>
-                    <a href="/2019/06/15/java的Servlet乱码处理/">
-                        <em>
-                            06-15
-                        </em>
-                        <span itemprop="name">
-                            处理Servlet的out响应乱码情况
-                        </span>
-                               
-                    </a>
-                </li>
-            </ul>
-        
-            
-
-            
-
-            <ul>
-                <li>
-                    <a href="/2019/06/15/idea控制台乱码/">
-                        <em>
-                            06-15
-                        </em>
-                        <span itemprop="name">
-                            idea控制台中文乱码的问题
-                        </span>
-                               
-                    </a>
-                </li>
-            </ul>
-        
-            
-
-            
-
-            <ul>
-                <li>
-                    <a href="/2019/06/15/idea初始化使用教程/">
-                        <em>
-                            06-15
-                        </em>
-                        <span itemprop="name">
-                            Idea初始常用配置
-                        </span>
-                               
-                    </a>
-                </li>
-            </ul>
-        
-            
-
-            
-
-            <ul>
-                <li>
-                    <a href="/2019/06/15/hello-world/">
-                        <em>
-                            06-15
-                        </em>
-                        <span itemprop="name">
-                            Hello World
-                        </span>
-                               
-                    </a>
-                </li>
-            </ul>
-        
-            
-
-            
-                
-                <h3 class="archive-year">
-                    <!-- <a href="/archives/2019/04"> -->
-                    <a>
-                        2019 - 04
-                    </a>
-                </h3>
-            
-
-            <ul>
-                <li>
-                    <a href="/2019/04/29/Spring/">
-                        <em>
-                            04-29
-                        </em>
-                        <span itemprop="name">
-                            Spring
-                        </span>
-                               
-                    </a>
-                </li>
-            </ul>
-        
+        </div>
     </div>
-
-    
 </div>
-		</main>
+<div class="search-wrap">
+    <span class="search-close">&times;</span>
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+            <i class="icon icon-lg icon-chevron-left"></i>
+        </a>
+        <input class="search-field" placeholder="Search..." id="keywords">
+        <a id="search-submit" href="javascript:;">
+            <i class="fa fa-search"></i>
+        </a>
+    <div class="search-container" id="search-container">
+        <ul class="search-result" id="search-result">
+        </ul>
+    </div>
+</div>
 
-		<!--footer-->
-		<footer>
-	<div class="social">
-		<ul>
-	
-		<li>
-			<a href="http://github.com/" target="_blank">
-				<i class="fa fa-github"></i>
-			</a>
-		</li>
-	
-		<li>
-			<a href="http://github.com/" target="_blank">
-				<i class="fa fa-weibo"></i>
-			</a>
-		</li>
-	
-		<li>
-			<a href="http://github.com/" target="_blank">
-				<i class="fa fa-pinterest"></i>
-			</a>
-		</li>
-	
-		<li>
-			<a href="http://github.com/" target="_blank">
-				<i class="fa fa-instagram"></i>
-			</a>
-		</li>
-	
-		<li>
-			<a href="http://github.com/" target="_blank">
-				<i class="fa fa-twitter"></i>
-			</a>
-		</li>
-	
-		<li>
-			<a href="/atom.xml" target="_blank">
-				<i class="fa fa-rss"></i>
-			</a>
-		</li>
-			
-</ul>
-
-	</div>
-		
-	<div class="copyright">
-		<p>
-			 
-				&copy;2017 - 2019, content by 来杯java吗. All Rights Reserved.
-			
-			
-			
-
-	<!-- busuanzi -->
-	<!-- busuanzi -->
-
-		
-	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-	
-
-		<span id="busuanzi_container_site_pv">
-	    	本站总访问量<span id="busuanzi_value_site_pv"></span>次
-		</span>
-
-		<span id="busuanzi_container_site_uv">
-	  		本站访客数<span id="busuanzi_value_site_uv"></span>人次
-		</span>
-		
-	
-
-
-
-
-		</p>
-		<p>
-			<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.
-			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
-			<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>				
-		</p>
-	</div>		
-</footer>
-		
-	<!-- set '1' to show motto in all pages! -->
-
-	<script src="/plugin/motto/motto.js"></script>
-	
-	<script type="text/javascript">
-		$(".motto").html( getMingYanContent() );
-	</script>	
-
-
-
-
-
-<!-- love effect -->
-
-	<script src="/plugin/love/love.js"></script>
-
-
-<!-- back to top -->
-
-	
-	<div id="totop">
-  		<a href="javascript:;" name="TOTOP" class="fa fa-arrow-up"></a>
-	</div>
-
-
-
-
-<!-- site analysis -->
-
-
-	<!-- site-analysis -->
-	
-	
-	
-	
-	
- 
-
-<script src="/plugin/vibrant/vibrant.js"></script>
-<script src="/plugin/chinese/chinese.js"></script>
-<script src="/plugin/imgLazyLoader/yall.min.js"></script>
-<script src="/plugin/imgResize/jquery.resizeimagetoparent.min.js"></script>
-<script src="/plugin/nicescroll/jquery.nicescroll.js"></script>
-<script src="/js/resizediv.js"></script>
+<div id="search-tpl">
+    <li class="search-result-item">
+        <a href="{url}" class="search-item-li">
+            <span class="search-item-li-title" title="{title}">{title}</span>
+        </a>
+    </li>
+</div>
+<script src="/js/search.js"></script>
 <script src="/js/main.js"></script>
-	</body>	
+
+
+  <script src="//cdn.bootcss.com/particles.js/2.0.0/particles.min.js"></script>
+  <div id="particles"></div>
+  <script src="/js/particles.js"></script>
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  <script src="//cdn.bootcss.com/scrollReveal.js/3.0.5/scrollreveal.js"></script>
+  <script src="/js/animate.js"></script>
+
+
+  <script src="/js/pop-img.js"></script>
+  <script>
+     $(".article-entry p img").popImg();
+  </script>
+
+  </div>
+</body>
 </html>
