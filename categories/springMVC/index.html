@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>Tag: 博客 | 一花一树一世界</title>
+  <title>Category: springMVC | 一花一树一世界</title>
   
   
   <meta name="description" content="学习博客">
@@ -240,8 +240,8 @@
       
         
   <h2 class="title">
-    <a href="/2019/08/25/还原博客/">
-      我的兄弟叫顺溜之还原博客
+    <a href="/2019/08/26/REST风格/">
+      REST风格
     </a>
   </h2>
 
@@ -269,7 +269,7 @@
             <div class="new-meta-item date">
   <a class="notlink">
     <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2019-08-25</p>
+    <p>2019-08-26</p>
   </a>
 </div>
 
@@ -277,6 +277,14 @@
         
           
             
+  
+  <div class="new-meta-item category">
+    <a href="/categories/springMVC/REST风格/" rel="nofollow">
+      <i class="fas fa-folder-open" aria-hidden="true"></i>
+      <p>springMVC&nbsp;/&nbsp;REST风格</p>
+    </a>
+  </div>
+
 
           
         
@@ -300,22 +308,28 @@
 
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
-      <h2 id="糟糕，重装系统了，博客没了怎么办！"><a href="#糟糕，重装系统了，博客没了怎么办！" class="headerlink" title="糟糕，重装系统了，博客没了怎么办！"></a>糟糕，重装系统了，博客没了怎么办！</h2><h3 id="大概分为下面几个步骤"><a href="#大概分为下面几个步骤" class="headerlink" title="大概分为下面几个步骤"></a>大概分为下面几个步骤</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1. 环境搭建</span><br><span class="line">2. 安装Hexo</span><br><span class="line">3. 别瞎看只需要二步哦，忽略我好吗？？</span><br></pre></td></tr></table></figure>
-<p><img src="/../img/restore/xu.jpg"></p>
-<p style="font-weight:bolder;color:red">偷偷告诉你们</p><br><p style="font-weight:bolder;color:red">没有备份博客也搞不定鸭</p>
-      
-        <div class="readmore">
-          <a href="/2019/08/25/还原博客/" class="flat-box">
-            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-            閱讀全文
-          </a>
-        </div>
+      <p>path = “/view/{参数}”# REST风格</p>
+<h4 id="介绍REST"><a href="#介绍REST" class="headerlink" title="介绍REST"></a>介绍REST</h4><p><img src="/../img/spring/REST风格.png"></p>
+<p>我们这种风格是相当于带参数时，参数没有使用传统的？号后面带参数形式<br>我们可以清晰的看出来我们的参数是1</p>
+<p>示例：<br>/view/?id=1  ==&gt;  /view/1</p>
+<h5 id="1-那到底什么是-REST-风格呢？"><a href="#1-那到底什么是-REST-风格呢？" class="headerlink" title="1.那到底什么是 REST 风格呢？"></a><a>1.那到底什么是 REST 风格呢？</a></h5><p>REST：全称:<span style="color:red">Reqresentational State Transfer</span></p>
+<p>即<span style="color:red">表述性状态转移</span></p>
+<p>可以简单的理解为：使用url表示资源，每个资源都用一个独一无二的url表示，并使用</p>
+<p>HTTP表示操作方法，即准确描述服务器对资源的处理动作（GET，POST，PUT，DELETE）<br>，实现资源的增删改查</p>
+<h4 id="那我们应该获取这个风格所带的参数呢"><a href="#那我们应该获取这个风格所带的参数呢" class="headerlink" title="那我们应该获取这个风格所带的参数呢"></a>那我们应该获取这个风格所带的参数呢</h4><p>对于这种风格我们Spring MVC提供了@PathVariable注解，可以将URl中的 {XXX}</p>
+<p>占位符参数绑定到控制器处理方法入参中</p>
+<p>假如我们的一个提交路径为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">path = &quot;/view/&#123;参数&#125;&quot;</span><br></pre></td></tr></table></figure>
+<p>我们可以到Controller层编写到一下代码获取到参数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">//设置查看，使用REST风格</span><br><span class="line">@RequestMapping(value = &quot;view/&#123;id&#125;&quot;,method = RequestMethod.GET)</span><br><span class="line">public ModelAndView ShowView(@PathVariable Integer id) &#123;</span><br><span class="line">    ModelAndView modelAndView = new ModelAndView();</span><br><span class="line">    //根据id查询信息</span><br><span class="line">     Provider provider= providerService.selectByPrimaryKey(id);</span><br><span class="line">     //保存到作用域</span><br><span class="line">    modelAndView.addObject(&quot;provider&quot;,provider);</span><br><span class="line">    modelAndView.setViewName(&quot;providerview&quot;);</span><br><span class="line">    return modelAndView;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>id就是我们的带的参数，可以自己随便定义变量名</p>
+<p>这就是我们Spring MVC的REST风格</p>
+
       
     </div>
     
       <div class="full-width auto-padding tags">
         
-          <a href="/tags/博客/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>博客</a>
+          <a href="/tags/REST风格/" rel="nofollow"><i class="fas fa-hashtag fa-fw"></i>REST风格</a>
         
       </div>
     
@@ -338,6 +352,7 @@
 
     
   
+
 </div>
 <aside class="l_side">
   
