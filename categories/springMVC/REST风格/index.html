@@ -140,7 +140,7 @@
 			
 				<div class="m_search">
 					<form name="searchform" class="form u-search-form">
-						<input type="text" class="input u-search-input" placeholder="搜尋">
+						<input type="text" class="input u-search-input" placeholder="Search">
 						<i class="icon fas fa-search fa-fw"></i>
 					</form>
 				</div>
@@ -279,9 +279,9 @@
             
   
   <div class="new-meta-item category">
-    <a href="/categories/springMVC/REST风格/" rel="nofollow">
+    <a href="/categories/SpringMvc/REST风格/" rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>springMVC&nbsp;/&nbsp;REST风格</p>
+      <p>SpringMvc&nbsp;/&nbsp;REST风格</p>
     </a>
   </div>
 
@@ -310,22 +310,16 @@
     <div class="article-entry" itemprop="articleBody">
       <p>path = “/view/{参数}”# REST风格</p>
 <h4 id="介绍REST"><a href="#介绍REST" class="headerlink" title="介绍REST"></a>介绍REST</h4><p><img src="/../img/spring/REST风格.png"></p>
-<p>我们这种风格是相当于带参数时，参数没有使用传统的？号后面带参数形式<br>我们可以清晰的看出来我们的参数是1</p>
-<p>示例：<br>/view/?id=1  ==&gt;  /view/1</p>
-<h5 id="1-那到底什么是-REST-风格呢？"><a href="#1-那到底什么是-REST-风格呢？" class="headerlink" title="1.那到底什么是 REST 风格呢？"></a><a>1.那到底什么是 REST 风格呢？</a></h5><p>REST：全称:<span style="color:red">Reqresentational State Transfer</span></p>
-<p>即<span style="color:red">表述性状态转移</span></p>
-<p>可以简单的理解为：使用url表示资源，每个资源都用一个独一无二的url表示，并使用</p>
-<p>HTTP表示操作方法，即准确描述服务器对资源的处理动作（GET，POST，PUT，DELETE）<br>，实现资源的增删改查</p>
-<h4 id="那我们应该获取这个风格所带的参数呢"><a href="#那我们应该获取这个风格所带的参数呢" class="headerlink" title="那我们应该获取这个风格所带的参数呢"></a>那我们应该获取这个风格所带的参数呢</h4><p>对于这种风格我们Spring MVC提供了@PathVariable注解，可以将URl中的 {XXX}</p>
-<p>占位符参数绑定到控制器处理方法入参中</p>
-<p>假如我们的一个提交路径为：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">path = &quot;/view/&#123;参数&#125;&quot;</span><br></pre></td></tr></table></figure>
-<p>我们可以到Controller层编写到一下代码获取到参数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">//设置查看，使用REST风格</span><br><span class="line">@RequestMapping(value = &quot;view/&#123;id&#125;&quot;,method = RequestMethod.GET)</span><br><span class="line">public ModelAndView ShowView(@PathVariable Integer id) &#123;</span><br><span class="line">    ModelAndView modelAndView = new ModelAndView();</span><br><span class="line">    //根据id查询信息</span><br><span class="line">     Provider provider= providerService.selectByPrimaryKey(id);</span><br><span class="line">     //保存到作用域</span><br><span class="line">    modelAndView.addObject(&quot;provider&quot;,provider);</span><br><span class="line">    modelAndView.setViewName(&quot;providerview&quot;);</span><br><span class="line">    return modelAndView;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>id就是我们的带的参数，可以自己随便定义变量名</p>
-<p>这就是我们Spring MVC的REST风格</p>
-
+<p>我们这种风格是相当于带参数时，参数没有使用传统的？号后面带参数形式<br>我们可以清晰的看出来我们的参数是1<br>
       
-    </div>
+        <div class="readmore">
+          <a href="/2019/08/26/REST风格/" class="flat-box">
+            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+            Read More
+          </a>
+        </div>
+      
+    </p></div>
     
       <div class="full-width auto-padding tags">
         
@@ -471,7 +465,7 @@
   <section class="widget category">
     
 <header class="material">
-  <div><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;文章分類</div>
+  <div><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;Categories</div>
   
     <a class="rightBtn" rel="nofollow" href="/categories/" title="categories/">
     <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
@@ -481,15 +475,17 @@
     <div class="content material">
       <ul class="entry">
         
+          <li><a class="flat-box" title="/categories/SpringMvc/" href="/categories/SpringMvc/"><div class="name">SpringMvc</div><div class="badge">(2)</div></a></li>
+        
+          <li><a class="flat-box child" title="/categories/SpringMvc/REST风格/" href="/categories/SpringMvc/REST风格/"><div class="name">REST风格</div><div class="badge">(1)</div></a></li>
+        
+          <li><a class="flat-box child" title="/categories/SpringMvc/文件上传/" href="/categories/SpringMvc/文件上传/"><div class="name">文件上传</div><div class="badge">(1)</div></a></li>
+        
           <li><a class="flat-box" title="/categories/spring/" href="/categories/spring/"><div class="name">spring</div><div class="badge">(2)</div></a></li>
         
           <li><a class="flat-box child" title="/categories/spring/MyBatis/" href="/categories/spring/MyBatis/"><div class="name">MyBatis</div><div class="badge">(1)</div></a></li>
         
           <li><a class="flat-box child" title="/categories/spring/数据源/" href="/categories/spring/数据源/"><div class="name">数据源</div><div class="badge">(1)</div></a></li>
-        
-          <li><a class="flat-box" title="/categories/springMVC/" href="/categories/springMVC/"><div class="name">springMVC</div><div class="badge">(1)</div></a></li>
-        
-          <li><a class="flat-box child" title="/categories/springMVC/REST风格/" href="/categories/springMVC/REST风格/"><div class="name">REST风格</div><div class="badge">(1)</div></a></li>
         
       </ul>
     </div>
@@ -506,7 +502,7 @@
   <section class="widget tagcloud">
     
 <header class="material">
-  <div><i class="fas fa-fire fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;熱門標籤</div>
+  <div><i class="fas fa-fire fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;Hot Tags</div>
   
     <a class="rightBtn" rel="nofollow" href="/tags/" title="tags/">
     <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
@@ -514,7 +510,7 @@
 </header>
 
     <div class="content material">
-      <a href="/tags/MySql/" style="font-size: 14px; color: #999">MySql</a> <a href="/tags/REST风格/" style="font-size: 14px; color: #999">REST风格</a> <a href="/tags/idea/" style="font-size: 24px; color: #555">idea</a> <a href="/tags/jsp/" style="font-size: 24px; color: #555">jsp</a> <a href="/tags/maven/" style="font-size: 14px; color: #999">maven</a> <a href="/tags/spring/" style="font-size: 24px; color: #555">spring</a> <a href="/tags/博客/" style="font-size: 14px; color: #999">博客</a>
+      <a href="/tags/MySql/" style="font-size: 14px; color: #999">MySql</a> <a href="/tags/REST风格/" style="font-size: 14px; color: #999">REST风格</a> <a href="/tags/idea/" style="font-size: 24px; color: #555">idea</a> <a href="/tags/jsp/" style="font-size: 24px; color: #555">jsp</a> <a href="/tags/maven/" style="font-size: 14px; color: #999">maven</a> <a href="/tags/spring/" style="font-size: 24px; color: #555">spring</a> <a href="/tags/博客/" style="font-size: 14px; color: #999">博客</a> <a href="/tags/文件上传/" style="font-size: 14px; color: #999">文件上传</a>
     </div>
   </section>
 
@@ -587,19 +583,19 @@
     </div>
   
   <br>
-  <div><p>博客內容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh_TW">姓名標示-非商業性-相同方式分享 4.0 國際 (CC BY-NC-SA 4.0) 協議</a></p>
+  <div><p>Blog content follows the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License</a></p>
 </div>
   <div>
-    本站使用
+    Use
     <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" class="codename">博客</a>
     as theme
     
-      ，
+      , 
       total visits
       <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span>
       times
     
-    。
+    . 
   </div>
 </footer>
 <script>setLoadingBarProgress(80);</script>
@@ -705,15 +701,15 @@
 <!-- 复制 -->
 <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
 <script>
-  let COPY_SUCCESS = "複製成功";
-  let COPY_FAILURE = "複製失敗";
+  let COPY_SUCCESS = "Copied";
+  let COPY_FAILURE = "Copy failed";
   /*页面载入完成后，创建复制按钮*/
   !function (e, t, a) {
     /* code */
     var initCopyCode = function(){
       var copyHtml = '';
       copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
-      copyHtml += '  <i class="fa fa-copy"></i><span>複製</span>';
+      copyHtml += '  <i class="fa fa-copy"></i><span>Copy</span>';
       copyHtml += '</button>';
       $(".highlight .code pre").before(copyHtml);
       var clipboard = new ClipboardJS('.btn-copy', {
