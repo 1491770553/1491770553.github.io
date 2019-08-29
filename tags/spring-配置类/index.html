@@ -134,7 +134,7 @@
 			
 				<div class="m_search">
 					<form name="searchform" class="form u-search-form">
-						<input type="text" class="input u-search-input" placeholder="Search">
+						<input type="text" class="input u-search-input" placeholder="搜索">
 						<i class="icon fas fa-search fa-fw"></i>
 					</form>
 				</div>
@@ -303,7 +303,7 @@
         <div class="readmore">
           <a href="/2019/04/15/2019-04-15-spring-配置类/" class="flat-box">
             <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-            Read More
+            阅读全文
           </a>
         </div>
       
@@ -445,7 +445,7 @@
   <section class="widget category">
     
 <header class="material">
-  <div><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;Categories</div>
+  <div><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;文章分类</div>
   
     <a class="rightBtn" rel="nofollow" href="/categories/" title="categories/">
     <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
@@ -463,14 +463,6 @@
         
           <li><a class="flat-box child" title="/categories/SpringBoot/注解/" href="/categories/SpringBoot/注解/"><div class="name">注解</div><div class="badge">(1)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/SpringMvc/" href="/categories/SpringMvc/"><div class="name">SpringMvc</div><div class="badge">(3)</div></a></li>
-        
-          <li><a class="flat-box child" title="/categories/SpringMvc/REST风格/" href="/categories/SpringMvc/REST风格/"><div class="name">REST风格</div><div class="badge">(1)</div></a></li>
-        
-          <li><a class="flat-box child" title="/categories/SpringMvc/声明式事务/" href="/categories/SpringMvc/声明式事务/"><div class="name">声明式事务</div><div class="badge">(1)</div></a></li>
-        
-          <li><a class="flat-box child" title="/categories/SpringMvc/文件上传/" href="/categories/SpringMvc/文件上传/"><div class="name">文件上传</div><div class="badge">(1)</div></a></li>
-        
           <li><a class="flat-box" title="/categories/spring/" href="/categories/spring/"><div class="name">spring</div><div class="badge">(3)</div></a></li>
         
           <li><a class="flat-box child" title="/categories/spring/MyBatis/" href="/categories/spring/MyBatis/"><div class="name">MyBatis</div><div class="badge">(1)</div></a></li>
@@ -478,6 +470,14 @@
           <li><a class="flat-box child" title="/categories/spring/spring-配置类/" href="/categories/spring/spring-配置类/"><div class="name">spring 配置类</div><div class="badge">(1)</div></a></li>
         
           <li><a class="flat-box child" title="/categories/spring/数据源/" href="/categories/spring/数据源/"><div class="name">数据源</div><div class="badge">(1)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/springmvc/" href="/categories/springmvc/"><div class="name">springmvc</div><div class="badge">(3)</div></a></li>
+        
+          <li><a class="flat-box child" title="/categories/springmvc/REST风格/" href="/categories/springmvc/REST风格/"><div class="name">REST风格</div><div class="badge">(1)</div></a></li>
+        
+          <li><a class="flat-box child" title="/categories/springmvc/声明式事务/" href="/categories/springmvc/声明式事务/"><div class="name">声明式事务</div><div class="badge">(1)</div></a></li>
+        
+          <li><a class="flat-box child" title="/categories/springmvc/文件上传/" href="/categories/springmvc/文件上传/"><div class="name">文件上传</div><div class="badge">(1)</div></a></li>
         
           <li><a class="flat-box" title="/categories/了解Webflux/" href="/categories/了解Webflux/"><div class="name">了解Webflux</div><div class="badge">(1)</div></a></li>
         
@@ -496,7 +496,7 @@
   <section class="widget tagcloud">
     
 <header class="material">
-  <div><i class="fas fa-fire fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;Hot Tags</div>
+  <div><i class="fas fa-fire fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;热门标签</div>
   
     <a class="rightBtn" rel="nofollow" href="/tags/" title="tags/">
     <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
@@ -577,19 +577,19 @@
     </div>
   
   <br>
-  <div><p>Blog content follows the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License</a></p>
+  <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
 </div>
   <div>
-    Use
+    本站使用
     <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" class="codename">博客</a>
-    as theme
+    作为主题
     
-      , 
-      total visits
+      ，
+      总访问量为
       <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span>
-      times
+      次
     
-    . 
+    。
   </div>
 </footer>
 <script>setLoadingBarProgress(80);</script>
@@ -695,15 +695,15 @@
 <!-- 复制 -->
 <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
 <script>
-  let COPY_SUCCESS = "Copied";
-  let COPY_FAILURE = "Copy failed";
+  let COPY_SUCCESS = "复制成功";
+  let COPY_FAILURE = "复制失败";
   /*页面载入完成后，创建复制按钮*/
   !function (e, t, a) {
     /* code */
     var initCopyCode = function(){
       var copyHtml = '';
       copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
-      copyHtml += '  <i class="fa fa-copy"></i><span>Copy</span>';
+      copyHtml += '  <i class="fa fa-copy"></i><span>复制</span>';
       copyHtml += '</button>';
       $(".highlight .code pre").before(copyHtml);
       var clipboard = new ClipboardJS('.btn-copy', {
